@@ -26,7 +26,7 @@ function Home() {
       </div>
       <div className="avatar">
         <div className="card">
-          <img src="/reactavatar.webp" alt="" />
+          <img src="/ahsan.png" alt="" />
           <div className="info">
             <div>DEVEVLOPER</div>
             <div>Pakistan</div>

@@ -25,12 +25,29 @@ function Projects() {
       link: "https://max-flow.vercel.app",
     },
     {
-      name: "Recipe Finder Web App",
-      des: "Developed a web application using JavaScript to help users search for and discover recipes",
-      mission: "Back-end Developer, system analysis and design",
-      language: "HTML5, CSS3, JS, third party Api",
-      images: "/recipe.PNG",
-      link: "https://github.com/",
+      name: "Xcribe",
+      des: "Xcribe allows users to seamlessly transcribe and translate audio into text with ease.",
+      mission:
+        "Machine Learning algorithm implementation, system analysis and design",
+      language: "HTML5, CSS3, REACT JS, Tailwind CSS ",
+      images: "/xcribe.PNG",
+      link: "https://xcribe.netlify.app/",
+    },
+    {
+      name: "HomeTutor Plus",
+      des: "A Landing page for Home Tutor Service ",
+      mission: "UI Design and Implementation",
+      language: "HTML5, CSS3, Tailwind CSS ",
+      images: "/hometut.PNG",
+      link: "https://home-tutor-plus.netlify.app/",
+    },
+    {
+      name: "SHOP.LY",
+      des: "A simple Shopping Website with functional cart functionality ",
+      mission: "Functional cart Implementation",
+      language: "HTML5, CSS3, Tailwind CSS, Axios",
+      images: "/cart.PNG",
+      link: "https://shop-ly.netlify.app/",
     },
   ]);
   const divs = useRef([]);
@@ -39,7 +56,7 @@ function Projects() {
   return (
     <section className="projects" ref={scrollTab}>
       <div className="title" ref={(el) => el && divs.current.push(el)}>
-        This is my Projects
+        Featured Projects
       </div>
       <div className="des" ref={(el) => el && divs.current.push(el)}>
         {/* 20 */}
@@ -65,6 +82,7 @@ function Projects() {
                 style={{
                   textDecoration: "none",
                 }}
+                className="project-name"
               >
                 <h3>{value.name}</h3>
               </a>

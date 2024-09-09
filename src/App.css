@@ -60,8 +60,7 @@ header {
       cursor: pointer;
     }
     & .active {
-      color: #e945e3;
-      text-shadow: 0 0 5px #7a43b6;
+      color: #02c0ff;
     }
   }
   & .icon-bar {
@@ -104,10 +103,10 @@ section.home {
       & span {
         background-image: linear-gradient(
           to right,
-          #7be728,
+          #02c0ff,
           #f3265f,
           #7f40ac,
-          #7be728
+          #02c0ff
         );
         background-size: 200% auto;
         -webkit-text-fill-color: transparent;
@@ -118,7 +117,7 @@ section.home {
     & .des {
       color: #eee5;
       margin: 30px 0;
-      border-left: 0.7em solid #e945e3;
+      border-left: 0.7em solid #02c0ff;
       padding-left: 2em;
     }
     & a {
@@ -185,7 +184,7 @@ section.skills {
   & .list {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     justify-content: space-between;
     gap: 3vw;
     position: relative;
@@ -203,6 +202,10 @@ section.skills {
       background-size: 200% auto;
     }
     & .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
       backdrop-filter: blur(50px);
       padding: 20px;
       border-radius: 20px;
@@ -214,9 +217,9 @@ section.skills {
         border-radius: 10px;
       }
       & .des {
-        text-align: left;
+        /* text-align: left;
         width: 100%;
-        font-size: small;
+        font-size: small; */
       }
     }
   }
@@ -349,6 +352,12 @@ section.contacts {
   }
 }
 @media screen and (max-width: 767px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
   section {
     padding: 20px;
     &.home {
@@ -422,4 +431,24 @@ a:hover {
 /* selected link */
 a:active {
   color: rgb(255, 255, 255);
+}
+
+.project-name {
+  color: #ffffff;
+}
+
+.project-name:hover {
+  color: #c19eff;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer a {
+  color: #ffffff;
+  font-size: 20px;
+  padding: 0 5px;
 }

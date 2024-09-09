@@ -10,6 +10,12 @@ import {
   faNodeJs,
 } from "@fortawesome/free-brands-svg-icons";
 import CustomHook from "./CustomHook";
+import {
+  faDatabase,
+  faFire,
+  faFireBurner,
+  faFolder,
+} from "@fortawesome/free-solid-svg-icons";
 
 function Skills() {
   const divs = useRef([]);
@@ -44,7 +50,27 @@ function Skills() {
     {
       name: "ExpressJs",
       des: "Ullamco incididunt adipisicing laboris ullamco ipsum quis nulla non. Non et irure amet in sint duis Lorem est eiusmod nisi. Aute dolor eiusmod esse et cupidatat ex minim do reprehenderit ut aute. In commodo do consectetur qui occaecat cupidatat sint ullamco dolor tempor ullamco elit.",
-      icon: faLaravel,
+      icon: faJs,
+    },
+    {
+      name: "MONGO DB",
+      des: "Ullamco incididunt adipisicing laboris ullamco ipsum quis nulla non. Non et irure amet in sint duis Lorem est eiusmod nisi. Aute dolor eiusmod esse et cupidatat ex minim do reprehenderit ut aute. In commodo do consectetur qui occaecat cupidatat sint ullamco dolor tempor ullamco elit.",
+      icon: faDatabase,
+    },
+    {
+      name: "FIREBASE",
+      des: "Ullamco incididunt adipisicing laboris ullamco ipsum quis nulla non. Non et irure amet in sint duis Lorem est eiusmod nisi. Aute dolor eiusmod esse et cupidatat ex minim do reprehenderit ut aute. In commodo do consectetur qui occaecat cupidatat sint ullamco dolor tempor ullamco elit.",
+      icon: faFire,
+    },
+    {
+      name: "Talwind CSS",
+      des: "Ullamco incididunt adipisicing laboris ullamco ipsum quis nulla non. Non et irure amet in sint duis Lorem est eiusmod nisi. Aute dolor eiusmod esse et cupidatat ex minim do reprehenderit ut aute. In commodo do consectetur qui occaecat cupidatat sint ullamco dolor tempor ullamco elit.",
+      icon: faCss3,
+    },
+    {
+      name: "React Native",
+      des: "Ullamco incididunt adipisicing laboris ullamco ipsum quis nulla non. Non et irure amet in sint duis Lorem est eiusmod nisi. Aute dolor eiusmod esse et cupidatat ex minim do reprehenderit ut aute. In commodo do consectetur qui occaecat cupidatat sint ullamco dolor tempor ullamco elit.",
+      icon: faReact,
     },
   ]);
   return (
@@ -53,21 +79,21 @@ function Skills() {
         Skills
       </div>
       <div className="des" ref={(el) => el && divs.current.push(el)}>
-        {/* 20 */}
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-        perspiciatis quae veniam amet nesciunt voluptatibus quis consectetur
-        consequatur quisquam harum.
+        {/* 20 */}I have honed a diverse set of technical skills, enabling me to
+        build powerful, scalable, and user-friendly applications. Below are some
+        of the key technologies and tools I work with to bring my projects to
+        life.
       </div>
       <div className="list">
         {listSkills.map((value, key) => (
           <div
-            className={"item "}
+            className={"item  myup"}
             key={key}
             ref={(el) => el && divs.current.push(el)}
           >
             <FontAwesomeIcon icon={value.icon} />
             <h3>{value.name}</h3>
-            <div className="des">{value.des}</div>
+            {/* <div className="des">{value.des}</div> */}
           </div>
         ))}
       </div>
